@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="formularios.css">
+    <script src="login.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <div class="form-container">
+            <h1>Iniciar sesion</h1>
+            <p>Ingresa tus credenciales</p>
+            <form id="login-form">
+                <label for="email" class="sr-only">Usuario</label>
+                <input type="email" id="email" name="email" placeholder="Correo Electronico">
+                <br>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <br>
+                <button type="submit">Iniciar Sesion</button>
+                <p class="error escondido">Error al iniciar sesion</p>
+            </form>
+            <p>¿Todavia no tienes una cuenta? - <a href="/register">Registrate</a></p>
+
+        </div>
+    </main>
 </body>
 </html>
